@@ -26,4 +26,5 @@ class IsStudent_Clinician(permissions.BasePermission):
 def perform_check(request, role):
     if not request.user.is_authenticated:
         return False
+    
     return request.user.role == role

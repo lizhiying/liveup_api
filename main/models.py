@@ -12,7 +12,6 @@ from django.db.models.signals import post_save
 
 from main.choices import NOT_SEEN, RECEPTIONIST, REFERAL_STATUS, ROLES
 
-
 class User(AbstractUser):
     email = models.EmailField(unique=True)
     phone_number = PhoneNumberField(blank=True, null=True)
@@ -25,7 +24,6 @@ class User(AbstractUser):
 
     def __str__(self) -> str:
         return self.username
-
 
 class Patient(models.Model):
     patient_number = models.CharField(max_length=10, blank=True)

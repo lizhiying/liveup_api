@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 # pull official base image
-FROM python:3
+FROM python:3.9.16
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
